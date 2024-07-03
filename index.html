@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nanda Snack</title>
+    <link rel="stylesheet" href="style.css">
+    <!--AOS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!--AOSend-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Nanda Snack</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Nanda Snack
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#testimoni">Testimoni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar end -->
+
+    <!-- landingpg -->
+    <section class="lp" id="home">
+      <main class="content">
+        <h1>Nanda Snack</h1>
+        <div class="carousel">
+          <div class="controller" id="prevSlide">
+            <i data-feather="arrow-left"></i>
+          </div>
+          <div class="wrapper">
+            <div class="slide active">
+              <h3>Enak Bikin Kamu Nagih</h3>
+              <p>Nikmati kelezatan di setiap menu yang kami sajikan</p>
+            </div>
+            <div class="slide">
+              <h3>Halal</h3>
+              <p>Produk halal cocok untuk semua orang</p>
+            </div>
+            <div class="slide">
+              <h3>Original</h3>
+              <p>Masakan original dengan resep ala rumahan</p>
+            </div>
+          </div>
+          <div class="controller" id="nextSlide">
+            <i data-feather="arrow-right"></i>
+          </div>
+        </div>
+        <a href="#menu" class="cta">Pesan sekarang</a>
+        <div class="cek">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img class="cimg" src="assets/food.jpg" style="width:100%">
+                  <div class="text">
+                    <p>Masakan Kaya Akan Rempah</p>
+                  </div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img class="cimg" src="assets/bahan.jpg" style="width:100%">
+                  <div class="text">
+                    <p>Rasakan Keunikan Rasa Dengan Bahan Segar Pada Setiap Olahan Kami</p>
+                  </div>
+                </div>
+                </div>
+                <br>
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+        </div>
+      </main>
+    </section>
+    <!-- landingpg end -->
+
+    <!-- about -->
+    <section class="about" id="about">
+    <h2>Tentang Kami</h2>
+    <div class="row">
+      <div class="about-img" data-aos="flip-left" data-aos-duration="1000">
+        <img src="assets/logo.png" alt="" />
+      </div>
+      <div class="content">
+        <h3>Nanda Snack</h3>
+        <p>
+          Nanda Snack, sebuah UMKM katering yang berdiri sejak tahun 2020,
+          telah menjadi pilihan utama warga Desa Purwosari untuk memenuhi
+          kebutuhan konsumsi di setiap acara seperti pernikahan, ulang tahun,
+          khitanan, dan lain sebagainya.
+        </p>
+        <p id="secondParagraph" class="hidden" >
+          Nanda Snack menyediakan snack yang berupa jajanan pasar seperti
+          arem-arem, nagasari, kue lapis, klepon, dan jajanan pasar lainnya
+          yang tentunya sangat lezat. Tidak hanya snack, Nanda Snack juga
+          menyediakan menu berupa nasi kuning, nasi kotak, nasi berkat dengan
+          lauk sesuai dengan keinginan pelanggan.
+        </p>
+        <p id="thirdParagraph" class="hidden">
+          Dengan adanya website ini diharapkan Nanda Snack dapat dikenal oleh
+          banyak orang dan memudahkan para pelanggan untuk pesan di Nanda
+          Snack
+        </p>
+        <button id="showMoreBtn" data-aos="fade-left" data-aos-duration="1000">Show More</button>
+      </div>
+    </div>
+    </section>
+    <!-- about end -->
+
+    <!--/menu -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2 class="text-center mb-4">Menu</h2>
+        <h5 data-aos="zoom-in" data-aos-duration="1000">
+          Berikut adalah beberapa menu yang kami hadirkan untuk Anda nikmati
+        </h5>
+        <div class="snack"  data-aos="fade-up" data-aos-duration="1000">
+        <div class="card">
+        <header class="card__thumb">
+          <img src="assets/realklepon.png" />
+        </header>
+        <div class="card__body">
+        <div class="card__category"><h6>Rp. 2000</h6></div>
+          <h1 class="card__title">
+            Klepon
+          </h1>
+          <p class="card__description">
+            Jajanan kenyal dan manis dengan lumeran gula di dalamnya dan taburan
+            kelapa parut
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <header class="card__thumb">
+          <img src="assets/realaremarem.png"/>
+        </header>
+        <div class="card__body">
+        <div class="card__category"><h6>Rp. 2000</h6></div>
+          <h1 class="card__title">
+            Arem-Arem
+          </h1>
+          <p class="card__description">
+            Arem-arem dengan berbagai macam isian yang lezat dan bikin nagih
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <header class="card__thumbngs">
+          <img src="assets/realngs.png" />
+        </header>
+        <div class="card__body">
+        <div class="card__category"><h6>Rp. 2000</h6></div>
+          <h1 class="card__title">
+            Nagasari
+          </h1>
+          <p class="card__description">
+            Jajanan tradisional yang bertekstur lembut dengan isian pisang
+          </p>
+        </div>
+      </div>
+       <div class="card">
+        <header class="card__thumb">
+          <img src="assets/realputuayu.png"/>
+        </header>
+        <div class="card__body">
+        <div class="card__category"><h6>Rp. 2000</h6></div>
+          <h1 class="card__title">
+            Putu Ayu
+          </h1>
+          <p class="card__description">
+            Kue lembut bertabur parutan kelapa 
+          </p>
+        </div>
+      </div>
+       <div class="card">
+        <header class="card__thumb">
+          <img src="assets/reallps.png"/>
+        </header>
+        <div class="card__body">
+        <div class="card__category"><h6>Rp. 2000</h6></div>
+          <h1 class="card__title">
+            Kue lapis
+          </h1>
+          <p class="card__description">
+            Kue kenyal berlapis yang manis dengan tampilan yang menarik
+          </p>
+        </div>
+      </div>
+       <div class="card">
+        <header class="card__thumb">
+          <img src="assets/lumpia.png"/>
+        </header>
+        <div class="card__body">
+        <div class="card__category"><h6>Rp. 2000</h6></div>
+          <h1 class="card__title">
+            Lumpia
+          </h1>
+          <p class="card__description">
+            Camilan dengan berbagai isian cocok dihidangkan untuk semua orang 
+          </p>
+        </div>
+      </div>
+       <div class="card">
+        <header class="card__thumb">
+          <img src="assets/gtahu.png" alt="gorengan">
+        </header>
+        <div class="card__body">
+        <div class="card__category"><h6>Rp. 1000</h6></div>
+          <h1 class="card__title">
+            Gorengan
+          </h1>
+          <p class="card__description">
+            Nikmati berbagai macam gorengan bakwan, mendoan, tahu sumpel dengan cabai segar
+          </p>
+        </div>
+      </div>
+       <div class="card">
+        <header class="card__thumb">
+          <img src="assets/opor.png"/>
+        </header>
+        <div class="card__body">
+        <div class="card__category"><h6>Rp. 20.000</h6></div>
+          <h1 class="card__title">
+            Opor
+          </h1>
+          <p class="card__description">
+            Nikmati opor ayam dengan kuah santan yang kaya akan rempah dan memiliki rasa yang enak
+          </p>
+        </div>
+      </div>
+      <h6>
+          NB: MENU DI ATAS HANYA BEBERAPA CONTOH MENU YANG ADA DI NANDA SNACK
+          UNTUK HARGA TIAP MENU DAPAT MENYESUAIKAN SESUAI DENGAN JUMLAH DAN KOMPOSISI
+          YANG DIINGINKAN OLEH PEMBELI
+      </h6>
+      </div>
+    </section>
+    <!--Album/menu end-->
+
+    <!--Faq-->
+    <section class="faq" id="faq">
+      <h2>FAQ</h2>
+
+      <div class="faq-container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="faq-item">
+          <div class="q" onclick="toggleAnswer(this)">
+            <h5>Bagaimana cara pesan di Nanda Snack?</h5>
+            <i class="icon" data-feather="chevron-down"></i>
+          </div>
+          <div class="a">
+            <p>
+              Untuk pemesanan bisa hubungi
+              <a href="https://wa.me/628978227479" target="blank_">WhatsApp</a> atau langsung
+              datang ke
+              <a href="https://maps.app.goo.gl/JbqT4hNsXd3CvsAD9" target="blank_">lokasi</a>
+            </p>
+          </div>
+        </div> 
+        <div class="faq-item"> 
+          <div class="q" onclick="toggleAnswer(this)">
+            <h5>Menu apa saja yang ada di Nanda Snack?</h5>
+            <i class="icon" data-feather="chevron-down"></i>
+          </div>
+          <div class="a">
+            <p>
+              Nanda Snack menyediakan jajanan pasar dan juga berbagai macam nasi
+              seperti, nasi kuning, nasi berkat, dll
+            </p>
+          </div>
+        </div> 
+        <div class="faq-item"> 
+          <div class="q" onclick="toggleAnswer(this)">
+            <h5>Berapa pesanan minimal di Nanda Snack?</h5>
+            <i class="icon" data-feather="chevron-down"></i>
+          </div>
+          <div class="a">
+            <p>Minimal pemesanan yaitu 20 porsi</p>
+          </div>
+        </div> 
+        <div class="faq-item">  
+          <div class="q" onclick="toggleAnswer(this)">
+            <h5>Di daerah mana Nanda Snack tersedia?</h5>
+            <i class="icon" data-feather="chevron-down"></i>
+          </div>
+          <div class="a">
+            <p>
+              Untuk saat ini Nanda Snack tersedia di Kota Kendal dan sekitarnya
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--faq end-->
+
+    <!--testimoni-->
+    <section class="testimoni" id="testimoni">
+        <h2>Testimoni</h2>
+        <div class="testimonials-container">
+            <div class="testimonials" data-aos="fade-up" data-aos-duration="1000" id="testimonials">
+                <div class="testimonial-card">
+                    <div class="user-container">
+                        <img src="assets/u1.jpg">
+                    </div>
+                    <div class="stars-container">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p>John</p>
+                    <p>"Ada berbagai macam menu yang dapat dipilih"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="user-container">
+                        <img src="assets/u2.jpg">
+                    </div>
+                    <div class="stars-container">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p>Alex</p>
+                    <p>"Rasanya enak dan harganya terjangkau"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="user-container">
+                        <img src="assets/u3.jpg">
+                    </div>
+                    <div class="stars-container">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p>Joni</p>
+                    <p>"Sangat cocok untuk berbagai acara"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="user-container">
+                        <img src="assets/u4.jpg">
+                    </div>
+                    <div class="stars-container">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p>Udin</p>
+                    <p>"Pelayanannya sangat ramah bisa diantar"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="user-container">
+                        <img src="assets/u5.jpg">
+                    </div>
+                    <div class="stars-container">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p>Mike</p>
+                    <p>"Rasanya seperti masakan rumahan sendiri"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--testimoni end-->
+    
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <div class="row">
+        <div class="contact-info">
+          <p>Nanda Snack</p>
+          <p>Hubungi kami untuk mendapatkan info pemesanan</p>
+          <p class="call">
+            <a href="https://wa.me/628978227479" target="_blank">
+              <img src="assets/wacolor.png">
+              Pesan Sekarang</a>
+          </p>
+          <p>Untuk lokasi bisa kunjungi di alamat berikut:</p>
+          <p class="lokasi">
+              <a href="https://maps.app.goo.gl/g5GGfCv3BDnDLNrg6" target="_blank">
+                  <img src="assets/peta.png">
+                  Nanda Snack
+              </a>
+          </p>
+          <p>
+            Marong Kulon, Purwosari, Patebon, Kendal Regency, Central Java 51351
+          </p>
+        </div>
+        <div class="map-container" data-aos="zoom-in" data-aos-duration="1000">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7691028152863!2d110.16376747375112!3d-6.9181845677092495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e705dcbf856f72d%3A0x2543715bf8cba8d8!2sNanda%20Snack%20Purwosari!5e0!3m2!1sen!2sid!4v1707205572910!5m2!1sen!2sid" width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact end -->
+    
+
+    <!--footer-->
+    <footer class="footer-48201">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 pr-md-5">
+            <h4 class="footer-site-logo d-block mb-4">Nanda Snack</h4>
+            <p>Solusi untuk Konsumsi</p>
+          </div>
+          <div class="col-md">
+            <h4 class="sction">Section</h4>  
+            <ul class="list-unstyled nav-links" data-aos="fade-right" data-aos-duration="1000">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#testimoni">Testimoni</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div class="additional-content">
+                <div class="row">
+                 <h4>Latest News</h4>
+                <div class="latest-news-item lnews">
+                  <p>Menerima Pemesanan Opor dengan skala besar menjelang hari raya</p>
+                </div>
+          </div>
+          </div>
+          <div class="col-md text-md-center">
+            <ul class="social list-unstyled" data-aos="fade-up" data-aos-duration="1000">
+              <li><a href="https://wa.me/628978227479" target="_blank"><i class="icon" data-feather="phone"></i></a></li>
+              <li><a href="https://maps.app.goo.gl/g5GGfCv3BDnDLNrg6" target="_blank"><i class="icon" data-feather="map-pin"></i></a></li>
+            </ul>
+            <p class="btn btn-tertiary" data-aos="fade-up" data-aos-duration="1000">Stay in Touch</p>
+          </div>
+        </div>
+        
+
+        <div class="row ">
+          <div class="col-12 text-center">
+            <div class="copyright mt-5 pt-5">
+              <p><small>&copy; 2024 Muhammad Mukti Rimawan.</small></p>
+            </div>
+          </div>
+        </div> 
+      </div>
+      </div>
+    </footer>
+    <!--footer end-->
+
+    
+    <!--AOS-->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script>
+		AOS.init({
+			easing: 'ease-out-back',
+			duration: 1000
+		});
+	</script>
+
+	<script>
+		hljs.initHighlightingOnLoad();
+
+		$('.hero__scroll').on('click', function(e) {
+			$('html, body').animate({
+				scrollTop: $(window).height()
+			}, 1200);
+		});
+	</script>
+    <!--AOSend-->
+
+   
+    <script>
+      feather.replace();
+    </script>
+    
+    
+    
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

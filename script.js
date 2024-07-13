@@ -27,9 +27,6 @@ function updateActiveLink() {
       "#about": document.querySelector('.navbar-nav .nav-link[href="#about"]'),
       "#menu": document.querySelector('.navbar-nav .nav-link[href="#menu"]'),
       "#faq": document.querySelector('.navbar-nav .nav-link[href="#faq"]'),
-      "#testimoni": document.querySelector(
-        '.navbar-nav .nav-link[href="#testimoni"]'
-      ),
       "#contact": document.querySelector(
         '.navbar-nav .nav-link[href="#contact"]'
       ),
@@ -149,47 +146,7 @@ function updateActiveLink() {
   
   
   // faq end
-  
-  // testimoni
-  document.addEventListener('DOMContentLoaded', function () {
-      let isDown = false;
-      let startX;
-      let scrollLeft;
-  
-      const testimonialsContainer = document.querySelector('.testimonials');
-  
-      
-      testimonialsContainer.innerHTML += testimonialsContainer.innerHTML;
-  
-      testimonialsContainer.addEventListener('mousedown', function (e) {
-          isDown = true;
-          startX = e.pageX - this.offsetLeft;
-          scrollLeft = this.scrollLeft;
-      });
-      testimonialsContainer.addEventListener('mouseleave', function () {
-          isDown = false;
-      });
-      testimonialsContainer.addEventListener('mouseup', function () {
-          isDown = false;
-      });
-      testimonialsContainer.addEventListener('mousemove', function (e) {
-          if (!isDown) return;
-          e.preventDefault();
-          const x = e.pageX - this.offsetLeft;
-          const walk = (x - startX) * 1; 
-          this.scrollLeft = scrollLeft - walk;
-  
-         
-          if (this.scrollLeft >= this.scrollWidth / 2) {
-              this.scrollLeft = 0; 
-          } else if (this.scrollLeft <= 0) {
-              this.scrollLeft = this.scrollWidth / 2; 
-          }
-      });
-  });
-  // testimoni end
-  
-  
+    
   
   //   new carousel img
   let slideIndex = 0;

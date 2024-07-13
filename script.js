@@ -146,7 +146,8 @@ function updateActiveLink() {
   
   
   // faq end
-    
+  
+  
   
   //   new carousel img
   let slideIndex = 0;
